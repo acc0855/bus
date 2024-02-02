@@ -360,13 +360,20 @@ body {
       grid-gap: 1rem;
     
     }
+    /* ///////////////////// */
+    .card{
+      margin: 0 auto; /* Set margin to auto on left and right */
+            text-align: center; /* Center the text inside the container if needed */
+            border: 1px solid #ccc; /* Optional: Add a border for better visualization */
+            padding: 10px;
+    }
+    /* ////////////////////////// */
    
     .card {
-        
+     
   width: 280px;
   border-radius: 20px;
-  margin: 0;
-  padding: 0;
+
   
   background: #1b233d;
   /* padding: 5px; */
@@ -504,6 +511,122 @@ body {
   border-right: 1px solid rgba(255, 255, 255, 0.126);
 }
    </style>
+   <style>
+    .car {
+  width: 190px;
+  height: 254px;
+  background-image: linear-gradient(144deg,#8608b4, #492fed 60%,#bd6fda);
+  border: none;
+  border-radius: 10px;
+  padding-top: 20px;
+  position: relative;
+  margin: auto;
+  font-family: inherit;
+  margin-top: 20%;
+}
+
+.car span {
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  display: block;
+  padding-top: 10px;
+  font-size: 1.3em;
+}
+
+.car .job {
+  font-weight: 400;
+  color: white;
+  display: block;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 1em;
+}
+
+.car .img {
+  width: 70px;
+  height: 70px;
+  background: #e8e8e8;
+  border-radius: 100%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.car button {
+  padding: 6px 25px;
+  display: block;
+  margin: auto;
+  border-radius: 8px;
+  border: none;
+  margin-top: 5px;
+  background: #e8e8e8;
+  color: #111111;
+  font-weight: 600;
+}
+
+.car button:hover {
+  background: #212121;
+  color: #ffffff;
+}
+   </style>
+   <style>
+    .ca {
+  width: 190px;
+  height: 254px;
+  background-image: linear-gradient(144deg,#8608b4, #492fed 60%,#bd6fda);
+  border: none;
+  border-radius: 10px;
+  padding-top: 20px;
+  position: relative;
+  margin: auto;
+  font-family: inherit;
+  margin-top: 20%;
+}
+
+.ca span {
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  display: block;
+  padding-top: 10px;
+  font-size: 1.3em;
+}
+
+.ca .job {
+  font-weight: 400;
+  color: white;
+  display: block;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 1em;
+}
+
+.ca .img {
+  width: 70px;
+  height: 70px;
+  background: #e8e8e8;
+  border-radius: 100%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.btn{
+  padding: 6px 25px;
+  display: block;
+  margin: auto;
+  border-radius: 8px;
+  border: none;
+  margin-top: 25px;
+  background: #e8e8e8;
+  color: #111111;
+  font-weight: 600;
+}
+
+.ca button:hover {
+  background: #212121;
+  color: #ffffff;
+}
+   </style>
 </head>
 
 <body>
@@ -588,10 +711,38 @@ body {
           </div>
         </div>
       </div>
+      <!-- /////////////////////////////////////////////// -->
+      <div class="ca">
+        <div class="card-border-top">
+        </div>
+        <div class="img">
+          <img src="https://img.icons8.com/?size=512&id=tVovXEFVAsUk&format=png" alt="" height="70">
+          
+        </div>
+        <span>Website</span>
+        <p class="job">You can by This 'Pc' website 50$</p>
+        <button class = "btn" id = "btn1"> Click To Visit
+        </button>
+      </div>
+      <!-- //////////////////////////////////////////////////////// -->
+      <div class="car">
+        <div class="card-border-top">
+        </div>
+        <div class="img">
+          <img src="home_7209532.png" alt="" height="70">
+          
+        </div>
+        <span>Website</span>
+        <p class="job">You can by This 'Pc' website 100$ + security system</p>
+        <button id = "btn2"> Click To Visit
+        </button>
+      </div>
     <script>
         let a = document.getElementById("theme");
         let b = document.body;
         let c = document.body;
+        let d = document.getElementById("btn1");
+        let e = document.getElementById("btn2");
         a.addEventListener('change', function() {
             if (a.checked) {
                b.style.backgroundColor = "white";
@@ -599,6 +750,12 @@ body {
             else{
                 c.style.backgroundColor = "#201313";
             }
+        });
+        d.addEventListener('click', () =>{
+          window.open("https://acc0855.github.io/codersss");
+        });
+        e.addEventListener('click', () =>{
+          window.open("https://acc0855.github.io/enjoy/");
         });
     </script>
 </body>
