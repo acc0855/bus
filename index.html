@@ -562,6 +562,8 @@ body {
   background: #e8e8e8;
   color: #111111;
   font-weight: 600;
+  color: #ffffff;
+  background-color: #181a1f;
 }
 
 .car button:hover {
@@ -573,7 +575,7 @@ body {
     .ca {
   width: 190px;
   height: 254px;
-  background-image: linear-gradient(144deg,#8608b4, #492fed 60%,#bd6fda);
+  background-image: linear-gradient(144deg,#e81043, #0ccf05 60%,#0b2ac7);
   border: none;
   border-radius: 10px;
   padding-top: 20px;
@@ -618,7 +620,8 @@ body {
   border: none;
   margin-top: 25px;
   background: #e8e8e8;
-  color: #111111;
+  color: #ffffff;
+  background-color: #181a1f;
   font-weight: 600;
 }
 
@@ -626,6 +629,198 @@ body {
   background: #212121;
   color: #ffffff;
 }
+   </style>
+     <style>
+       .c {
+      margin: 0 auto; /* Set margin to auto on left and right */
+            text-align: center; /* Center the text inside the container if needed */
+            border: 1px solid #ccc; /* Optional: Add a border for better visualization */
+            padding: 10px;
+    }
+      .c {
+    width: 190px;
+    height: 254px;
+    background-image: linear-gradient(144deg,#740334, #030000 60%,#15f4c0);
+    border: none;
+    border-radius: 10px;
+    padding-top: 20px;
+    position: relative;
+    margin: auto;
+    font-family: inherit;
+    margin-top: 20%;
+  }
+  
+  .c span {
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    display: block;
+    padding-top: 15px;
+    font-size: 1.3em;
+  }
+  
+  .c .job {
+    font-weight: 400;
+    color: white;
+    display: block;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 1em;
+  }
+  
+  .c .img {
+    width: 70px;
+    height: 70px;
+    background: #e8e8e8;
+    border-radius: 100%;
+    margin: auto;
+    
+    margin-top: 20px;
+  }
+  .img1
+{
+  margin-left: 5%;
+  
+}  
+  .c button{
+    padding: 6px 25px;
+    display: block;
+    margin: auto;
+    border-radius: 8px;
+    border: none;
+    margin-top: 65px;
+    background: #e8e8e8;
+    color: #ffffff;
+    background-color: #181a1f;
+    font-weight: 600;
+  }
+  
+  .c button:hover {
+    background: #212121;
+    color: #ffffff;
+  }
+     </style>
+   <style>
+    .tooltip-container {
+  height: 50px;
+  width: 80px;
+  border-radius: 5px;
+  background-color: #fff;
+  background-image: linear-gradient(
+    to left bottom,
+    #f2f5f8,
+    #ecf1f2,
+    #e7eceb,
+    #e3e7e4,
+    #e1e2de
+  );
+  border: 1px solid white;
+  margin: 0 auto; /* Set margin to auto on left and right */
+            text-align: center; /* Center the text inside the container if needed */
+            border: 1px solid #ccc; /* Optional: Add a border for better visualization */
+            padding: 10px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.151);
+  position: relative;
+  transition: transform 0.3s ease;
+  z-index: 1;
+  margin-top: 50%;
+}
+
+.tooltip-container::before {
+  position: absolute;
+  content: "";
+  top: -50%;
+  clip-path: polygon(50% 0, 0 100%, 100% 100%);
+  border-radius: 5px;
+  background-color: fff;
+  background-image: linear-gradient(
+    to left bottom,
+    #1288ff,
+    #000000,
+    #010504,
+    #000000,
+    #000000
+  );
+  width: 100%;
+  height: 50%;
+  transform-style: preserve-3d;
+  transform: perspective(1000px) rotateX(-150deg) translateY(-110%);
+  transition: transform 0.3s ease;
+  z-index: -1;
+  
+  margin-left: -50%;
+  
+}
+
+.tooltip-container .text {
+  color: rgb(32, 30, 30);
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: -8%;
+  margin-top: 12%;
+  
+}
+
+.tooltip {
+  position: absolute;
+  top: -20px;
+  opacity: 0;
+  background: linear-gradient(-90deg, rgba(0, 0, 0, 0.05) 1px, white 1px),
+    linear-gradient(rgba(0, 0, 0, 0.05) 1px, white 1px),
+    linear-gradient(-90deg, rgba(0, 0, 0, 0.04) 1px, white 1px),
+    linear-gradient(rgba(0, 0, 0, 0.04) 1px, white 1px),
+    linear-gradient(white 3px, #f2f2f2 3px, #f2f2f2 78px, white 78px),
+    linear-gradient(-90deg, #aaa 1px, white 1px),
+    linear-gradient(-90deg, white 3px, #f2f2f2 3px, #f2f2f2 78px, white 78px),
+    linear-gradient(#aaa 1px, white 1px), #f2f2f2;
+  background-size: 4px 4px, 4px 4px, 80px 80px, 80px 80px, 80px 80px, 80px 80px,
+    80px 80px, 80px 80px;
+  padding: 5px 10px;
+  border: 1px solid rgb(206, 204, 204);
+
+  height: 70px;
+  width: 110px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.2s;
+  pointer-events: none;
+  letter-spacing: 0.5px;
+  font-size: 18px;
+  font-weight: 600;
+  text-shadow: 10px salmon;
+  margin: 0 auto; /* Set margin to auto on left and right */
+            text-align: center; /* Center the text inside the container if needed */
+            border: 1px solid #ccc; /* Optional: Add a border for better visualization */
+            padding: 10px;
+  
+}
+.tooltip-container:hover {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  
+}
+
+.tooltip-container:hover::before {
+  transform: rotateY(0);
+  background-image: none;
+  margin-left: -50%;
+  background-color: white;
+  
+}
+
+.tooltip-container:hover .tooltip {
+  top: -90px;
+  opacity: 1;
+  transition-duration: 0.3s;
+  margin: 0 auto; /* Set margin to auto on left and right */
+            text-align: center; /* Center the text inside the container if needed */
+            border: 1px solid #ccc; /* Optional: Add a border for better visualization */
+            padding: 10px;
+}
+
    </style>
 </head>
 
@@ -697,7 +892,7 @@ body {
           <span class="title">Business's</span>
           <div class="row row1">
             <div class="item">
-              <span class="big-text">4</span>
+              <span class="big-text">3</span>
               <span class="regular-text">Porducts</span>
             </div>
             <div class="item">
@@ -737,12 +932,33 @@ body {
         <button id = "btn2"> Click To Visit
         </button>
       </div>
+      <!-- //////////////////////////////////////////////////////////// -->
+      <div class="c">
+        <div class="card-border-top">
+        </div>
+        <div class="img1">
+          <img src="suitcase_858047.png" alt="" height="45" >
+          
+        </div>
+        <span>Website</span>
+        <p class="job">You can by This 'Mobile' website 300$ </p>
+        <button id = "btn3"> Click To Visit
+        </button>
+      </div>
+      <!-- ///////////////////////////////////////////////////////////////////// -->
+    <div class="tooltip-container">
+  <span class="tooltip">bixu0855</span>
+  <span class="text">@</span>
+</div>
+
+
     <script>
         let a = document.getElementById("theme");
         let b = document.body;
         let c = document.body;
         let d = document.getElementById("btn1");
         let e = document.getElementById("btn2");
+        let f = document.getElementById("btn3");
         a.addEventListener('change', function() {
             if (a.checked) {
                b.style.backgroundColor = "white";
@@ -757,6 +973,10 @@ body {
         e.addEventListener('click', () =>{
           window.open("https://acc0855.github.io/enjoy/");
         });
+        f.addEventListener('click', () =>{
+          window.open("https://acc0855.github.io/test/");
+        });
     </script>
+    
 </body>
 </html>
